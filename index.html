@@ -1,0 +1,493 @@
+<meta http-equiv="Cache-Control" content="max-age=86400" />
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Search-o1: Agentic Search-Enhanced Large Reasoning Models">
+  <meta name="keywords" content="MathVista, Math Vista">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Search-o1: Agentic Search-Enhanced Large Reasoning Models</title>
+
+
+  <!-- <link rel="icon" href="./static/images/title.png"> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/leaderboard.css">
+
+ <script type="text/javascript" src="static/js/sort-table.js" defer></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/explorer-index.js"></script>
+  <script src="./static/js/question_card.js"></script>
+
+  <script src="./static/js/leaderboard_testmini.js"></script>  
+  <script src="./data/results/output_folders.js" defer></script>
+  <script src="./data/results/model_scores.js" defer></script>
+
+  <script src="./visualizer/data/data_public.js" defer></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title is-bold">
+            <!-- <img src="static/images/csbench_logo_2.png" style="width:1em;vertical-align: middle" alt="Logo"/> -->
+            <!-- <span class="csbench" style="vertical-align: middle">CS-Bench</span> -->
+            </h1>
+          <h2 class="title is-3" style="margin-top: 0px; margin-bottom: 40px;">
+            <!-- <img src="static/images/title.png" style="width:1em;vertical-align: middle" alt="Logo"/> -->
+            🔍 Search-o1: Agentic Search-Enhanced<br> Large Reasoning Models
+          </h2>
+            
+          <h2 class="subtitle is-3 publication-subtitle">
+
+            <div class="is-size-5 publication-authors", style="width: 100%; margin: 15px auto;", >
+              <span class="author-block">Xiaoxi Li<sup style="color:#ed4b82;">1</sup><sup></sup>,</span>
+              <span class="author-block">Guanting Dong<sup style="color:#ed4b82;">1</sup><sup></sup>,</span>
+              <span class="author-block">Jiajie Jin<sup style="color:#ed4b82;">1</sup><sup></sup>,</span>
+              <span class="author-block">Yuyao Zhang<sup style="color:#ed4b82;">1</sup><sup></sup>,</span>
+              <span class="author-block">Yujia Zhou<sup style="color:#1a4ebf;">2</sup><sup></sup>,</span>
+              <span class="author-block">Peitian Zhang<sup style="color:#ed4b82;">1</sup><sup></sup>,</span><br>
+              <span class="author-block">Yutao Zhu<sup style="color:#ed4b82;">1</sup></sup></sup>,</span>
+              <span class="author-block">Zhicheng Dou<sup style="color:#ed4b82;">1</sup></sup><sup>*
+             
+          </div>
+  
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup style="color:#ed4b82">1</sup>Gaoling School of Artificial Intelligence, Renmin University of China.</span><br>
+              <span class="author-block"><sup style="color:#1a4ebf">2</sup>Department of Computer Science and Technology, Tsinghua University.</span><br>
+              <span class="author-block">*</sup>Corresponding Author.</span>
+
+            </div>
+
+
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+            
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/xxxx.xxxxxx"
+                   class="external-link button is-normal is-rounded is-light">
+                
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/sunnynexus/Search-o1"
+                   class="external-link button is-normal is-rounded is-light">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block"> -->
+                <!-- <a href="https://huggingface.co/datasets/xxxxxxx" -->
+                   <!-- class="external-link button is-normal is-rounded is-dark"> -->
+                  <!-- <span class="icon"> -->
+                      <!-- <i class="far fa-images"></i> -->
+                      <!-- <p style="font-size:18px">🤗</p> -->
+                      <!-- 🔗 -->
+                  <!-- </span> -->
+                  <!-- <span>Dataset</span> -->
+                <!-- </a> -->
+              <!-- </span> -->
+              <!-- hf paper Link. -->
+              <span class="link-block">
+                <a href="https://huggingface.co/papers/xxxx.xxxxxx"
+                   class="external-link button is-normal is-rounded is-light">
+                  <span class="icon">
+                      <!-- <i class="far fa-images"></i> -->
+                      <p style="font-size:18px">🤗</p>
+                      <!-- 🔗 -->
+                  </span>
+                  <span>HF-Paper</span>
+                </a>
+              </span>
+              
+              
+              
+              <!-- </span> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container" style="margin-top: 10px; margin-bottom: -100px;"></div>
+  <div class="container" style="margin-bottom: 2vh;">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            In recent years, reasoning models such as OpenAI-o1 and Qwen-QwQ have demonstrated impressive step-by-step reasoning capabilities. However, these models often face challenges of knowledge insufficiency during long-chain reasoning, leading to uncertainties and potential errors in the reasoning process. To address this challenge, we propose a novel framework—<strong>Search-o1</strong>—designed to enhance the reliability and applicability of large reasoning models through autonomous knowledge retrieval.
+          </p>
+          <p>
+            Search-o1 integrates <strong>an agentic retrieval-augmented generation (RAG) mechanism</strong> and <strong>a Reason-in-Documents module</strong> to dynamically acquire and integrate external knowledge during the reasoning process. This approach allows reasoning models to autonomously retrieve relevant information when encountering uncertain knowledge points, thereby improving the coherence and accuracy of the reasoning chain. Extensive experiments on complex reasoning tasks in science, mathematics, and coding, as well as six open-domain QA benchmarks, demonstrate the strong performance of Search-o1. This framework enhances the trustworthiness and applicability of large reasoning models in complex reasoning tasks, paving the way for more reliable and versatile intelligent systems.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container" style="margin-top: 10px; margin-bottom: -100px;"></div>
+  <div class="container" style="margin-bottom: 2vh;">
+    <!-- Current Status and Challenges of Reasoning Models. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Introduction</h2>
+        <div class="content has-text-justified">
+          <p>
+            Large reasoning models achieve long-step, incremental reasoning through extensive reinforcement learning, making them suitable for complex domains such as science, mathematics, and coding. This "slow thinking" approach not only enhances the logical coherence and interpretability of reasoning but also introduces a significant issue: knowledge insufficiency. During the reasoning process, models may encounter uncertain knowledge points, causing error propagation throughout the reasoning chain and affecting the quality of the final answers.
+          </p>
+          <p>
+            Preliminary experiments reveal that reasoning models similar to OpenAI-o1 encounter over 30 instances of uncertain terms, such as "perhaps" and "possibly," on average during each reasoning process when handling complex problems. This not only increases the complexity of reasoning but also makes manual verification of the reasoning process more challenging. Therefore, automating the supplementation of necessary knowledge during reasoning has become crucial for enhancing the trustworthiness of large reasoning models.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Current Status and Challenges of Reasoning Models. -->
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container" style="margin-top: -130px; margin-bottom: -100px;">
+    <div class="columns is-centered">
+      <div class="column is-full content">
+        <!-- 案例研究 1 -->
+        <div class="box m-5">
+          <div class="content has-text-centered">
+            <img src="static/images/figure_1.png" alt="geometric reasoning" style="width:84%; height:350px; object-fit: contain; margin-top: 20px; margin-bottom: 20px;"/>
+            <p style="margin-top: 10px;">
+              Analysis of reasoning uncertainty with QwQ-32B-Preview. Left: Examples of uncertain words identified during the reasoning process. </br>Right: Average occurrence of high-frequency uncertain words per output in the GPQA diamond set.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container" style="margin-bottom: 2vh;">
+    <!-- Search-o1: An Autonomous Knowledge Retrieval-Augmented Reasoning Framework. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <!-- <h2 class="title is-3">Search-o1: An Autonomous Knowledge Retrieval-Augmented Reasoning Framework</h2> -->
+        <div class="content has-text-justified">
+          <p>
+            To overcome the aforementioned challenges, we propose the <strong>Search-o1</strong> framework. This framework integrates autonomous retrieval-augmented generation (Agentic Retrieval-Augmented Generation) mechanisms and a Reason-in-Documents module to dynamically acquire and integrate external knowledge during the reasoning process.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Search-o1 Framework. -->
+  </div>
+</section>
+
+
+
+<!-- DATASET SECTION -->
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+    <h1 class="title is-1 csbench">
+    <!-- <img src="static/images/csbench_logo_2.png" style="width:1.5em;vertical-align: middle" alt="Logo"/> -->
+    <span class="csbench" style="width:1.5em;vertical-align: middle">Our Search-o1 Framework</span>
+  </h1>
+  </div>
+</section>
+
+
+
+
+
+<section class="section">
+  <div class="container" style="margin-bottom: 2vh;">
+    <!-- Comparative Analysis of Approaches. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <!-- <h2 class="title is-3">Comparative Analysis of Approaches</h2> -->
+        <div class="content has-text-justified">
+          <p>
+            The Search-o1 framework addresses knowledge insufficiency in large reasoning models (LRMs) by seamlessly integrating external knowledge retrieval into their reasoning process while maintaining chain-of-thought coherence. As illustrated in Figure, we present a comparative analysis of three approaches: vanilla reasoning, agentic retrieval-augmented generation (RAG), and our proposed Search-o1 framework.
+          </p>
+          <ul>
+            <li>
+              <strong>Vanilla Reasoning Pattern:</strong> Consider the example in Figure (a), where the task involves determining the carbon atom count in the final product of a three-step chemical reaction. The vanilla reasoning approach falters when encountering knowledge gaps (e.g., the "structure of trans-Cinnamaldehyde"). Without access to accurate information, the model must rely on assumptions, potentially leading to cascading errors throughout subsequent reasoning steps.
+            </li>
+            <li>
+              <strong>Agentic RAG:</strong> To bridge the knowledge gaps during reasoning, we build the agentic RAG mechanism (Figure (b)) to enable the model to autonomously retrieve external knowledge when needed. When uncertainty arises—such as regarding the compound's structure—the model generates targeted search queries (e.g., "structure of trans-Cinnamaldehyde"). However, the direct insertion of retrieved documents, which often contain verbose and tangential information, can disrupt the reasoning flow and compromise coherence.
+            </li>
+            <li>
+              <strong>Search-o1:</strong> Our Search-o1 framework (Figure (c)) extends the agentic RAG mechanism by incorporating a Reason-in-Documents module. This module condenses retrieved documents into focused reasoning steps that integrate external knowledge while maintaining the logical flow of the reasoning chain. It considers the current search query, retrieved documents, and the existing reasoning chain to generate coherent steps. This iterative process continues until the final answer is reached. The following sections provide detailed explanations of agentic RAG, Reason-in-Documents, and the Search-o1 inference process.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--/ Comparative Analysis of Approaches. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container" style="margin-top: -130px; margin-bottom: -70px;">
+    <div class="columns is-centered">
+      <div class="column is-full content">
+        <!-- 案例研究 1 -->
+        <div class="box m-5">
+          <div class="content has-text-centered">
+            <img src="static/images/figure_2.png" alt="geometric reasoning" style="width:84%; height:550px; object-fit: contain; margin-top: 10px; margin-bottom: 20px;"/>
+            <p style="margin-top: 10px;">
+              Comparison of reasoning approaches, including (a) vanilla reasoning pattern, (b) our reasoning approach with agentic RAG, and</br> (c) our Search-o1 framework that enhances large reasoning models with agentic RAG and the reason-in-documents module.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container" style="margin-bottom: 2vh;">
+    <!-- Inference for a Single Question -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <!-- <h2 class="title is-3">Inference for a Single Question</h2> -->
+        <div class="content has-text-justified">
+          <p>
+            For each question, the Search-o1 inference starts by combining the task instructions with the specific question. As the reasoning model generates the reasoning chain, it may create search queries marked with special symbols. When a search query is detected, it triggers the retrieval of relevant external documents. These documents are then processed by the Reason-in-Documents module, which extracts and refines the necessary information. The refined knowledge is integrated back into the reasoning chain, ensuring that the model incorporates essential external information while maintaining a coherent and logical flow, ultimately leading to a comprehensive reasoning process and the final answer.
+          </p>
+          <p>
+            To handle multiple questions efficiently, the Search-o1 framework uses a batch inference mechanism that processes all questions simultaneously. It starts by initializing reasoning sequences for each question and then generates tokens in parallel for all sequences. When a search query is identified in any sequence, the framework retrieves the necessary documents in batches. The Reason-in-Documents module then refines these documents collectively, and the relevant information is inserted back into each respective reasoning chain. Completed reasoning sequences are moved to a finished set, while ongoing ones continue to be processed. This parallel approach significantly improves the system's efficiency and ability to manage multiple inputs at the same time.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Batch Inference Mechanism -->
+  </div>
+</section>
+
+
+
+
+<section class="section">
+  <div class="container" style="margin-top: -140px; margin-bottom: -70px;">
+    <div class="columns is-centered">
+      <div class="column is-full content">
+        <!-- 案例研究 1 -->
+        <div class="box m-5">
+          <div class="content has-text-centered">
+            <img src="static/images/algo_1.png" alt="geometric reasoning" style="width:84%; height:550px; object-fit: contain; margin-top: 10px; margin-bottom: 20px;"/>
+            <!-- <p style="margin-top: 10px;">
+              Inference algorithm of Search-o1.
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- RESULTS SECTION -->
+<section class="Leader">
+  <div class="hero-body has-text-centered">
+    <h1 class="title is-1 csbench">Experimental Results</h1>
+  </div>
+</section>
+        
+<section class="section">
+  <div class="container" style="margin-top: -60px; margin-bottom: -50px;">
+    <div class="columns is-centered">
+      <div class="column is-full content">
+        <!-- 案例研究 1 -->
+        <div class="box m-5">
+          <div class="content has-text-centered">
+            <img src="static/images/table_1.png" alt="geometric reasoning" style="width:84%; height:500px; object-fit: contain; margin-top: 20px; margin-bottom: 20px;"/>
+            <p style="margin-top: 10px;">
+              Main results on challenging reasoning tasks, including PhD-level science QA, math and code benchmarks.
+            </p>
+          </div>
+        </div>
+        
+        <!-- 案例研究 2 -->
+        <div class="box m-5">
+          <div class="content has-text-centered">
+            <img src="static/images/figure_3.png" alt="geometric reasoning" style="width:84%; height:280px; object-fit: contain; margin-top: 20px; margin-bottom: 20px;"/>
+            <p style="margin-top: 10px;">
+              Scaling analysis of top-k retrieved documents utilized in reasoning. All results are based on QwQ-32B-Preview model.
+            </p>
+          </div>
+        </div>
+        
+        <!-- 案例研究 3 -->
+        <div class="box m-5">
+          <div class="content has-text-centered">
+            <img src="static/images/table_3.png" alt="geometric reasoning" style="width:84%; height:450px; object-fit: contain; margin-top: 20px; margin-bottom: 20px;"/>
+            <p style="margin-top: 10px;">
+              Performance comparison on open-domain QA tasks, including single-hop QA and multi-hop QA datasets.
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<br>
+
+
+
+<!-- RESULTS SECTION -->
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+    <h1 class="title is-1 csbench">Case Study</h1>
+  </div>
+</section>
+        
+<section class="section">
+  <div class="container" style="margin-top: -50px; margin-bottom: -80px;">
+    <div class="columns is-centered">
+      <div class="column is-full content">
+        <!-- 案例研究 1 -->
+        <div class="box m-5">
+          <div class="content has-text-centered">
+            <img src="static/images/case1.png" alt="geometric reasoning" style="width:84%; height:900px; object-fit: contain; margin-top: 20px; margin-bottom: 20px;"/>
+            <p style="margin-top: 10px;">
+              Case study #1 of Search-o1 on GPQA dataset, with the backbone model QwQ-32B-Preview.
+            </p>
+          </div>
+        </div>
+        
+        <!-- 案例研究 2 -->
+        <div class="box m-5">
+          <div class="content has-text-centered">
+            <img src="static/images/case2.png" alt="geometric reasoning" style="width:84%; height:900px; object-fit: contain; margin-top: 20px; margin-bottom: 20px;"/>
+            <p style="margin-top: 10px;">
+              Case study #2 of Search-o1 on AMC2023 dataset, with the backbone model QwQ-32B-Preview.
+            </p>
+          </div>
+        </div>
+        
+        <!-- 案例研究 3 -->
+        <div class="box m-5">
+          <div class="content has-text-centered">
+            <img src="static/images/case3.png" alt="geometric reasoning" style="width:84%; height:900px; object-fit: contain; margin-top: 20px; margin-bottom: 20px;"/>
+            <p style="margin-top: 10px;">
+              Case study #3 of Search-o1 on HotpotQA dataset, with the backbone model QwQ-32B-Preview.
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- @PAN TODO: bibtex -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3 has-text-centered">Citation</h2>
+    <pre><code>@article{search-o1,
+  title={Search-o1: Agentic Search-Enhanced Large Reasoning Models},
+  author={Xiaoxi Li and
+          Guanting Dong and
+          Jiajie Jin and
+          Yuyao Zhang and
+          Yujia Zhou and
+          Peitian Zhang and
+          Yutao Zhu and
+          Zhicheng Dou},
+  journal={CoRR},
+  volume={abs/xxxx.xxxxxx},
+  year={2025},
+  url={https://arxiv.org/abs/xxxx.xxxxxx},
+  eprinttype={arXiv},
+  eprint={xxxx.xxxxxx}
+}
+</code></pre>
+  </div>
+</section>
+
+
+</section>
+
+
+<footer class="footer">
+  <!-- <div class="container"> -->
+    <div class="content has-text-centered">
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is website adapted from <a href="https://nerfies.github.io/">Nerfies</a> and <a href="https://csbench.github.io/">CS-Bench</a> and <a href="https://Mathvista.github.io/">MathVista</a>, licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+</footer>
+
+</body>
+</html>
